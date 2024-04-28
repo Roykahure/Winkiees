@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Winkiees Farm - mobiles</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Winkiees Farm</h1>
+	<div id="topbar">
+			<div class="topbar-section topbar-menu">
+				<a href="home.html">Home</a>
+			</div>	
+			<div class="topbar-section topbar-menu">
+				<a href="animals.html">animals</a>
+			</div>
+			
+			<div class="topbar-section topbar-menu">
+				<a href="momskitchen.html">mom's kitchen</a>
+			</div>
+			</div>
+	<div id="chicken" class="item">
+		<img src="images/bicycle.jpeg" onclick="playAudio('schicken')" alt="this is a picture of a bicycle">
+		<audio id="schicken" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="pig" class="animal">
+		<img src="images/bus.jpg" onclick="playAudio('spig')" alt="this is a picture of a bus">
+		<audio id="spig" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="cow" class="animal">
+		<img src="images/car.jpg" onclick="playAudio('scow')" alt="this is a picture of a car">
+		<audio id="scow" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="cat" class="animal">
+		<img src="images/lorry.jpg" onclick="playAudio('scat')" alt="this is a picture of a lorry"> 
+		<audio id="scat" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="duck" class="animal">
+		<img src="images/plane.jpg" onclick="playAudio('sduck')" alt="this is a picture of a plane">
+		<audio id="sduck" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="sheep" class="animal">
+		<img src="images/train.jpg" onclick="playAudio('ssheep')" alt="this is a picture of a train">
+		<audio id="ssheep" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="dog" class="animal">
+		<img src="images/wheelbarrow.jpg" onclick="playAudio('sdog')" alt="this is a picture of a wheelbarrow">
+		<audio id="sdog" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="donkey" class="animal">
+		<img src="images/tricycle.jpg" onclick="playAudio('sdonkey')" alt="this is a picture of a tricycle">
+		<audio id="sdonkey" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="donkey" class="animal">
+		<img src="images/rollerskates.jpg" onclick="playAudio('sdonkey')" alt="this is a picture of a rollskates">
+		<audio id="sdonkey" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="donkey" class="animal">
+		<img src="images/scooter.jpg" onclick="playAudio('sdonkey')" alt="this is a picture of a scooter">
+		<audio id="sdonkey" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="donkey" class="animal">
+		<img src="images/matatu.jpg" onclick="playAudio('sdonkey')" alt="this is a picture of a kenyan matatu">
+		<audio id="sdonkey" src="sounds/casino.wav" ></audio>
+	</div>
+
+	
+	<script type="text/javascript">
+		function playAudio(audioId){
+        var audio = document.getElementById(audioId);
+        audio.play();
+    }
+			$("img").click(function() {
+
+				$(this).fadeOut("slow", function() {
+			});
+		});
+	
+
+
+	</script>
+</body>
+</html>

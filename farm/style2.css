@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d297bf; /* A light background for a soft feel */
+    font-family: 'Arial', sans-serif; /* Use a common, easily readable font */
+    color: #333; /* Darker text for good contrast */
+}
+
+/* Typography */
+h1 {
+    text-align: center; /* Centered heading for consistency */
+    margin: 20px 0; /* Margin to separate from other content */
+    font-size: 3rem; /* Scalable font size */
+    font-family: 'Cursive'; /* Stylized font for headings */
+    color: green; /* Eye-catching color for headings */
+}
+
+/* Links */
+a {
+    text-decoration: none; /* Removing underline for cleaner look */
+    color: inherit; /* Keeps color consistent with parent */
+}
+
+a:hover {
+    color: #555; /* Darker shade for hover effects */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex; /* Flexbox for flexible layouts */
+    justify-content: center; /* Centered navigation */
+    gap: 10px; /* Space between nav items */
+    background-color: #e0e0e0; /* Soft gray for contrast */
+    padding: 10px; /* Padding around nav bar */
+}
+
+.topbar-section {
+    border: 2px solid #cccccc; /* Subtle border to define sections */
+    padding: 5px 15px; /* Comfortable padding for clickability */
+    font-weight: bold;
+}
+
+/* Images */
+img {
+    width: 300px;
+    height: 300px;
+    margin: 30px; /* Consistent margin */
+    border: 5px solid transparent; /* Transparent border to create hover effect */
+    border-radius: 20px; /* Rounded corners for a softer look */
+    transition: border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+img:hover {
+    border-color: #fac641; /* Highlight border on hover */
+}
+
+/* Special Elements */
+#guess {
+    font-size: 1.5rem; /* Larger font size for better visibility */
+    background-color: aqua; /* Distinctive background color */
+    display: flex; /* Flex layout for centering elements */
+    justify-content: center; /* Center content within */
+    align-items: center;
+}
+
+/* Hidden by Default */
+.object {
+    display: none; /* By default, keep these elements hidden */
+}
+
+/* Container for Content */
+.container {
+    max-width: 1200px; /* Limits the width for readability */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px; /* Padding to avoid elements touching the edges */
+}

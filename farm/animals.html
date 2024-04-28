@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Winkiees Farm - animals</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Winkiees Farm</h1>
+	<div id="topbar">	
+			<div class="topbar-section topbar-menu">
+				<a href="home.html">Home</a>
+			</div>
+			
+			<div class="topbar-section topbar-menu">
+				<a href="mobiles.html">mobiles</a>
+			</div>
+			<div class="topbar-section topbar-menu">
+				<a href="momskitchen.html">mom's kitchen</a>
+			</div>
+			</div>
+	<div id="chicken" class="animal">
+		<img src="images/chicken.jpg" onclick="playAudio('schicken')">
+		<audio id="schicken" src="sounds/rooster crow.mp3" ></audio>
+	</div>
+	<div id="pig" class="animal">
+		<img src="images/pig.jpg" onclick="playAudio('spig')">
+		<audio id="spig" src="sounds/pig oink.mp3" ></audio>
+	</div>
+	<div id="cow" class="animal">
+		<img src="images/cow.jpg" onclick="playAudio('scow')">
+		<audio id="scow" src="sounds/cow sound.mp3" ></audio>
+	</div>
+	<div id="cat" class="animal">
+		<img src="images/cat.jpg" onclick="playAudio('scat')">
+		<audio id="scat" src="sounds/cat meow.mp3" ></audio>
+	</div>
+	<div id="duck" class="animal">
+		<img src="images/duck.jpg" onclick="playAudio('sduck')">
+		<audio id="sduck" src="sounds/duck quack.mp3" ></audio>
+	</div>
+	<div id="sheep" class="animal">
+		<img src="images/sheep.jpg" onclick="playAudio('ssheep')">
+		<audio id="ssheep" src="sounds/sheep bleet.mp3" ></audio>
+	</div>
+	<div id="dog" class="animal">
+		<img src="images/dog.jpg" onclick="playAudio('sdog')">
+		<audio id="sdog" src="sounds/dog bark.mp3" ></audio>
+	</div>
+	<div id="donkey" class="animal">
+		<img src="images/donkey.jpg" onclick="playAudio('sdonkey')">
+		<audio id="sdonkey" src="sounds/donkey sound.mp3" ></audio>
+	</div>
+	<div id="bee" class="animal">
+		<img src="images/bee.jpg" onclick="playAudio('sbee')">
+		<audio id="sbee" src="sounds/bee sound.mp3" ></audio>
+	</div>
+	<div id="butterfly" class="animal">
+		<img src="images/butterfly.jpg" onclick="playAudio('sdo')">
+		<audio id="sbutterfly" src="sounds/casino.wav" ></audio>
+	</div>
+	<div id="fish" class="animal">
+		<img src="images/fish.jpg" onclick="playAudio('sdo')">
+		<audio id="sfish" src="sounds/casino.wav" ></audio>
+	</div>
+
+	
+	<script type="text/javascript">
+		function playAudio(audioId){
+        var audio = document.getElementById(audioId);
+        audio.play();
+    }
+			$("img").click(function() {
+
+				$(this).fadeOut("slow", function() {
+			});
+		});
+	
+
+
+	</script>
+</body>
+</html>

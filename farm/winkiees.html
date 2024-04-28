@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>winkiees</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="object">
+		<img src="images/cat.jpg" alt="This is a picture of a cat">
+	</div>
+	<p>
+	<button id="guess">Guess!</button>
+	</p>
+	<script type="text/javascript">
+		var objectImages = new Array();
+		objectImages[0] = "cat";
+		objectImages[1] = "chicken";
+		objectImages[2] = "cow";
+		objectImages[3] = "donkey";
+		objectImages[4] = "duck";
+		objectImages[5] = "pig";
+		objectImages[6] = "fish";
+		objectImages[7] = "sheep";
+		objectImages[8] = "";
+		objectImages[9] = "";
+		objectImages[10] = "";
+		objectImages[11] = "";
+
+		var objectSounds = new Array();
+		objectSounds[0] = "sounds/cat meow.mp3";
+		objectSounds[1] = "sounds/rooster crow.mp3";
+		objectSounds[2] = "sounds/cow sound.mp3";
+		objectSounds[3] = "sounds/donkey.mp3";
+		objectSounds[4] = "sounds/duck quack.mp3";
+		objectSounds[5] = "sounds/pig oink.mp3";
+		objectSounds[6] = "";
+		objectSounds[7] = "sounds/sheep bleet.mp3";
+		objectSounds[8] = "";
+		objectSounds[9] = "sounds/bee sound.mp3";
+		objectSounds[10] = "";
+		objectSounds[11] = "";
+
+		document.getElementById("guess").onclick = function() {
+			var guess = Math.random();
+        	guess = guess * 6;
+        	guess = Math.floor(guess);
+        	document.getElementById = innerHTML
+        	alert(guess);
+        	var audio = new Audio();
+        	audio.src = objectSounds[guess];
+			audio.play();	
+        }
+        
+
+
+	</script>
+
+</body>
+</html>
